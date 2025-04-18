@@ -1,57 +1,13 @@
 type Props = {
     color: string;
+    children: React.ReactNode;
 };
 
-export const StickyWrapper = ({ color }: Props) => {
+export const StickyWrapper = ({ color, children }: Props) => {
     return (
-        <div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
-            </div>
-            <div style={{ border: '1px solid black', padding: '10px', backgroundColor: color, marginBottom: '10px' }}>
-                Sticky Wrapper (Color: {color})
+        <div className="hidden lg:block w-[368px] sticky self-end bottom-6">
+            <div className="min-h[calc(100vh-48px)] sticky top-6 flex flex-col gap-y-4">
+                {children}
             </div>
         </div>
     );

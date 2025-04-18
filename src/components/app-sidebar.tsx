@@ -24,6 +24,13 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
+        <SidebarMenuButton className="w-full justify-start">
+          <a href="/">
+            <LayoutDashboard className="mr-2 h-5 w-5" />
+            Home
+          </a>
+        </SidebarMenuButton>
+        <SidebarHeader />
         <SidebarGroupLabel className="text-center text-xl">Duo-Bun</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
